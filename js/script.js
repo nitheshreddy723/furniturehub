@@ -29,3 +29,12 @@ function slideshow(num){
     
     slides[num].style.display = "block";
 }
+
+function toggleMenu() {
+    const nav = document.getElementById("navLinks");
+    if (nav.style.display === "flex") {
+      nav.style.display = "none";
+    } else {
+      nav.style.display = "flex";
+    }
+  }
