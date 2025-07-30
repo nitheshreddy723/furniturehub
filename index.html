@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Furniture Hub</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">FurnitureHub</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#footer">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+ 
+
+<section class="hero">
+  <div class="slide-container">
+    <div class="slide">
+      <img src="https://images.pexels.com/photos/1866149/pexels-photo-1866149.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1080&w=1920" alt="Sofa">
+      <div class="caption">Luxury Sofa</div>
+    </div>
+    <div class="slide">
+      <img src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1080&w=1920" alt="Chair">
+      <div class="caption">Designer Chair</div>
+    </div>
+    <!-- <div class="slide">
+      <img src="https://images.pexels.com/photos/1866148/pexels-photo-1866148.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1080&w=1920" alt="Dining Table">
+      <div class="caption">Dining Table</div>
+    </div> -->
+    <div class="slide">
+      <img src="https://images.pexels.com/photos/2343468/pexels-photo-2343468.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1080&w=1920" alt="Modern Bed">
+      <div class="caption">Comfortable Bed</div>
+    </div>
+    <div class="slide">
+      <img src="https://images.pexels.com/photos/271805/pexels-photo-271805.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1080&w=1920" alt="Recliner">
+      <div class="caption">Cozy Recliner</div>
+    </div>
+
+    <span class="arrow prev" onclick="controller(-1)">&#10094;</span>
+    <span class="arrow next" onclick="controller(1)">&#10095;</span>
+  </div>
+</section>
+
+
+  <section class="products" id="products">
+    <h2>Products</h2>
+    <div class="product-grid">
+      <div class="card">
+        <img src="./images/th.jpeg" alt="Sofa">
+        <h3>Luxury Sofa</h3>
+        <p>₹25,999</p>
+      </div>
+      <div class="card">
+        <img src="./images/th (4).jpeg" alt="Sofa">
+        <h3>Luxury Sofa</h3>
+        <p>₹24,999</p>
+      </div><div class="card">
+        <img src="./images/th (5).jpeg" alt="Sofa">
+        <h3>Luxury Sofa</h3>
+        <p>₹10,999</p>
+      </div><div class="card">
+        <img src="./images/th (6).jpeg" alt="Sofa">
+        <h3>Luxury Sofa</h3>
+        <p>₹50,999</p>
+      </div><div class="card">
+        <img src="./images/th (7).jpeg" alt="Sofa">
+        <h3>Luxury Sofa</h3>
+        <p>₹13,999</p>
+      </div>
+      <div class="card">
+        <img src="./images/th (1).jpeg" alt="Chair">
+        <h3>Chair</h3>
+        <p>₹5,499</p>
+      </div>
+      <div class="card">
+        <img src="./images/th (8).jpeg" alt="Chair">
+        <h3>Recliner(velvet stone)</h3>
+        <p>₹16,499</p>
+      </div><div class="card">
+        <img src="./images/th (9).jpeg" alt="Chair">
+        <h3>Recliner</h3>
+        <p>₹19,499</p>
+      </div><div class="card">
+        <img src="./images/th (10).jpeg" alt="Chair">
+        <h3>Recliner(Velvet Blue)</h3>
+        <p>₹15,499</p>
+      </div><div class="card">
+        <img src="./images/th (11).jpeg" alt="Chair">
+        <h3>Recliner(Space Grey)</h3>
+        <p>₹11,299</p>
+      </div><div class="card">
+        <img src="./images/th (12).jpeg" alt="Chair">
+        <h3>Wakefit Recliner(Blue)</h3>
+        <p>₹23,599</p>
+      </div><div class="card">
+        <img src="./images/th (13).jpeg" alt="Chair">
+        <h3>Wakefit Recliner(Amber)</h3>
+        <p>₹22,499</p>
+      </div><div class="card">
+        <img src="./images/th (14).jpeg" alt="Chair">
+        <h3>Recliner(Tuscon)</h3>
+        <p>₹23,399</p>
+      </div>
+      <div class="card">
+        <img src="./images/th (2).jpeg" alt="Bed">
+        <h3>Comfort Bed</h3>
+        <p>₹18,999</p>
+      </div>
+      <div class="card">
+        <img src="./images/th (3).jpeg" alt="Table">
+        <h3>Dining Table</h3>
+        <p>₹12,499</p>
+      </div>
+      
+    </div>
+  </section>
+
+  <section class="about" id="about">
+  <h2>About Us</h2>
+  <p>
+    At <strong>FurnitureHub</strong>, we believe that furniture is not just about utility — it's about expression, comfort, and lifestyle. 
+    Our journey began with a passion for design and a mission to make beautifully crafted, high-quality furniture accessible to every home. 
+    Whether you're looking to create a cozy corner or elevate your entire living space, we bring you a curated collection of modern, classic, and contemporary pieces to match your style.
+    <br><br>
+    With attention to detail, sustainable materials, and unmatched craftsmanship, we’re committed to helping you turn your house into a home — one stylish piece at a time.
+  </p>
+</section>
+
+  <footer id="footer">
+    <p>&copy; 2025 FurnitureHub. All rights reserved.</p>
+  </footer>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
