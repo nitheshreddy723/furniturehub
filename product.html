@@ -1,0 +1,63 @@
+<!-- product.html (same file for all, but changes based on URL ?id= ) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Detail</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">FurnitureHub</div>
+    <a href="index.html" class="back-home">← Back to Home</a>
+
+  </header>
+  
+
+  <section class="product-detail">
+    <div class="detail-container">
+      <img id="product-image" src="" alt="Product Image">
+      <div class="product-info">
+        <h2 id="product-title">Product Title</h2>
+        <p id="product-price">₹--</p>
+        <p id="product-description">Loading description...</p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const productId = urlParams.get("id");
+
+    const products = {
+      1: { title: "Luxury Sofa", price: "₹25,999", image: "./images/th.jpeg", description: "A comfortable and stylish luxury sofa perfect for modern homes." },
+      2: { title: "Luxury Sofa", price: "₹24,999", image: "./images/th (4).jpeg", description: "Elegant and affordable luxury sofa with premium cushions." },
+      3: { title: "Luxury Sofa", price: "₹10,999", image: "./images/th (5).jpeg", description: "Compact sofa ideal for small spaces and apartments." },
+      4: { title: "Luxury Sofa", price: "₹50,999", image: "./images/th (6).jpeg", description: "Premium sofa with designer armrests and wooden finish." },
+      5: { title: "Luxury Sofa", price: "₹13,999", image: "./images/th (7).jpeg", description: "Simple, durable and cozy sofa for everyday use." },
+      6: { title: "Chair", price: "₹5,499", image: "./images/th (1).jpeg", description: "Minimalist chair made with a sturdy wooden frame." },
+      7: { title: "Recliner (Velvet Stone)", price: "₹16,499", image: "./images/th (8).jpeg", description: "Velvet finish recliner with push-back mechanism." },
+      8: { title: "Recliner", price: "₹19,499", image: "./images/th (9).jpeg", description: "Comfort recliner suitable for long movie sessions." },
+      9: { title: "Recliner (Velvet Blue)", price: "₹15,499", image: "./images/th (10).jpeg", description: "Stylish blue velvet recliner with soft padding." },
+      10: { title: "Recliner (Space Grey)", price: "₹11,299", image: "./images/th (11).jpeg", description: "Space-saving recliner in neutral grey shade." },
+      11: { title: "Wakefit Recliner (Blue)", price: "₹23,599", image: "./images/th (12).jpeg", description: "Premium Wakefit recliner with extra cushioning." },
+      12: { title: "Wakefit Recliner (Amber)", price: "₹22,499", image: "./images/th (13).jpeg", description: "Amber colored recliner with wide arm support." },
+      13: { title: "Recliner (Tuscon)", price: "₹23,399", image: "./images/th (14).jpeg", description: "Tuscon style recliner with textured fabric." },
+      14: { title: "Comfort Bed", price: "₹18,999", image: "./images/th (2).jpeg", description: "King-size bed with strong base and elegant design." },
+      15: { title: "Dining Table", price: "₹12,499", image: "./images/th (3).jpeg", description: "Modern dining table with 6-seater capacity." },
+    };
+
+    const product = products[productId];
+
+    if (product) {
+      document.getElementById("product-title").textContent = product.title;
+      document.getElementById("product-price").textContent = product.price;
+      document.getElementById("product-description").textContent = product.description;
+      document.getElementById("product-image").src = product.image;
+    } else {
+      document.querySelector(".product-detail").innerHTML = "<p>Product not found.</p>";
+    }
+  </script>
+</body>
+</html>
